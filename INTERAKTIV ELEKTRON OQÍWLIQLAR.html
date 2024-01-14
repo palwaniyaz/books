@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERAKTIV ELEKTRON OQÍWLIQLAR</title>
+    <link rel="stylesheet" href="./css/INTERAKTIV ELEKTRON OQÍWLIQLAR.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img class="logo-img" src="./фото/logo.png" alt="">
+        </div>
+        <div class="nav">
+            <button class="registration-btn" onclick="show('block')">Dizimnen ótiw</button>
+            <div id="filter" onclick="show('none')"></div>
+            <div id="modalForm">
+                <div class="login-box">
+                    <h2>Login</h2>
+                    <form action="">
+                        <div class="user-box">
+                            <input type="text" id="go" onclick="eror1()" class="input">
+                            <label for="" id="weit" class="label" >Username</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="password" id="run" onclick="eror2()" class="input">
+                            <label for="" id="stop" class="label">Password</label>
+                        </div>
+                        <a href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Submit
+                        </a>
+                    </form>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Sayt boyınsha izlew">
+                <a href="#">
+                    <img class="search-btn" src="./фото/search.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="conteiner-1">
+            <h1>
+                Kategoriyalar
+            </h1>
+            <div class="kategoriya">
+                <ul>
+                    <li>
+                        <a href="Bas bet.html">
+                            Интерактивный учебник
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Учебники по педмету LaTex
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteiner-2">
+            <img src="../_ee263660-441e-49ea-af5f-23f23d63e7ab.jpg" alt="">
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+
+    <script>
+        var show = function(state) {
+            document.getElementById('modalForm').style.display = state;
+            document.getElementById('filter').style.display = state;
+        }
+
+        var truth1 = document.getElementById('go');
+        var spurios1 = document.getElementById('weit');
+        var truth2 = document.getElementById('run');
+        var spurios2 = document.getElementById('stop');
+
+        function eror1() {
+            if(truth1.click()){
+                spurios1.style.top = "-20px";
+                spurios1.style.left = "0";
+                spurios1.style.color = "#03e9f4";
+                spurios1.style.fontSize = "12px";
+                // if(truth1) { 
+                //     spurios1.style.top = "-20px";
+                //     spurios1.style.left = "0";
+                //     spurios1.style.color = "#03e9f4";
+                //     spurios1.style.fontSize = "12px";
+                // } else {
+                //     spurios1.style.top = "0";
+                //     spurios1.style.left = "0";
+                //     spurios1.style.color = "#fff";
+                //     spurios1.style.fontSize = "16px";
+                // }
+            }
+        }
+        function eror2() {
+            if(truth2.click()){
+                spurios2.style.top = "-20px";
+                spurios2.style.left = "0";
+                spurios2.style.color = '#03e9f4';
+                spurios2.style.fontSize = "12px";
+                // if(truth2!== null) {
+                //     spurios2.style.top = "0";
+                //     spurios2.style.left = "0";
+                //     spurios2.style.color = "#fff";
+                //     spurios2.style.fontSize = "16px";
+                // } else {
+                //     spurios2.style.top = "-20px";
+                //     spurios2.style.left = "0";
+                //     spurios2.style.color = '#03e9f4';
+                //     spurios2.style.fontSize = "12px";
+                // }
+            }
+        }
+    </script>
+</body>
+</html>
